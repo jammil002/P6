@@ -6,7 +6,7 @@ import numpy as np
 x, y = symbols('x y')
 
 
-# Function for Taylor Series Expansion (first differential equation)
+# Function for Taylor Series Expansion
 def taylorSeriesExpansion():
     initialY = 1
     initialYPrime = -1
@@ -21,7 +21,7 @@ def taylorSeriesExpansion():
     return taylorSeries
 
 
-# Function for Second-order Taylor Polynomial (second differential equation)
+# Function for Second-order Taylor Polynomial
 def secondOrderTaylorPolynomial():
     initialYAtThree = 6
     initialYPrimeAtThree = 1
