@@ -3,9 +3,11 @@ import matplotlib.pyplot as plt
 import math
 from fractions import Fraction
 
+
 # Define the function for the linear Taylor polynomial
 def taylorSeriesLinear(x):
     return 6 + (x - 3)
+
 
 # Define the function for the exponential Taylor series
 def taylorSeriesExponential(x, termsCount):
@@ -13,6 +15,7 @@ def taylorSeriesExponential(x, termsCount):
     for i in range(1, termsCount + 1):
         result -= x ** i / math.factorial(i)
     return result
+
 
 # Define the function for calculating coefficients using a recursive formula
 def calculateCoefficients(termLimit):
@@ -25,6 +28,7 @@ def calculateCoefficients(termLimit):
         coefficients.append(coefficient)
     # Convert all coefficients to tuple
     return [coef.as_integer_ratio() for coef in coefficients]
+
 
 # Plot for Linear Taylor Polynomial
 xValuesLinear = np.linspace(2.5, 3.5, 100)
